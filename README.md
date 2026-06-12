@@ -1,130 +1,91 @@
-🌍 GoGlobal AI - Smart Immigration & Document Portal
-GoGlobal AI is a next-generation, AI-driven immigration assistant designed to simplify the complex process of visa eligibility and document preparation. It leverages high-performance Large Language Models (LLMs) and real-time analytics to empower students and professionals in their global migration journey.
-🚀 Key Features
-👤 For Users (Applicants)
-AI Eligibility Engine: Instant visa success prediction (High/Moderate/Low) based on academic and professional profiles.
-Smart LinkedIn Sync: Extract professional skills, experience, and projects directly from a LinkedIn URL or Bio using NLP.
-AI Document Assistant: Generate highly persuasive, academic-standard Statement of Purpose (SOP) and Cover Letters in seconds.
-Professional PDF Export: Download auto-generated documents in a standardized, print-ready format.
-Real-time Visa News: Stay updated with a live ticker of global immigration policy changes.
-🔐 For Administrators
-Executive Dashboard: A secure console with real-time charts (Pie & Bar charts) for user analytics.
-Data-Driven Insights: Monitor success ratios and the most popular target destinations globally.
-User Management: Full CRUD capabilities to manage assessments and clean historical data.
-🛠 Tech Stack
-Frontend: React.js, Lucide Icons, Recharts (Analytics), jsPDF (Document Generation).
-Backend: FastAPI (Python), Motor (Async MongoDB), Pydantic (Data Validation).
-AI Engine: Google Gemini (1.5 Flash, 2.0 Flash, 2.5 Flash, Pro) with a custom Model Redundancy/Fallback Engine.
-Database: MongoDB Atlas (NoSQL).
-🧠 AI Architecture: High Availability
-One of the core technical highlights of this project is the AI Fallback Logic. To ensure zero downtime and bypass API Quota (429) errors, the backend automatically cycles through multiple Gemini models until the request is successfully fulfilled.
-🏃 Getting Started
-1. Prerequisites
-Python 3.9+
-Node.js & npm
-MongoDB Atlas Account
-Google AI (Gemini) API Key
+# 🌍 GoGlobal AI - Smart Immigration & Document Portal
+
+GoGlobal AI is a next-generation, AI-driven immigration assistant designed to simplify the complex process of visa eligibility assessment and document preparation. By leveraging high-performance Large Language Models (LLMs) and real-time data analytics, it empowers students and professionals to seamlessly navigate their global migration journey.
+
+---
+
+## 🚀 Key Features
+
+### 👤 For Users (Applicants)
+* **AI Eligibility Engine:** Instant visa success prediction (High / Moderate / Low) based on academic profiles, financial standing, and professional backgrounds.
+* **Smart LinkedIn Sync:** Extract professional skills, experience, and key projects directly from a LinkedIn URL or bio using advanced NLP.
+* **AI Document Assistant:** Generate highly persuasive, academic-standard Statements of Purpose (SOP) and Cover Letters customized to specific countries in seconds.
+* **Professional PDF Export:** Seamlessly download auto-generated documents in a standardized, print-ready PDF format.
+* **Real-time Visa News:** Stay up-to-date with a live ticker streaming global immigration policy updates and news.
+
+### 🔐 For Administrators
+* **Executive Dashboard:** A secure administrative console featuring real-time interactive charts (Pie & Bar charts) for comprehensive user analytics.
+* **Data-Driven Insights:** Monitor global success ratios, application trends, and the most popular target destinations.
+* **User Management:** Full CRUD capabilities to manage applicant assessments, track logs, and maintain historical data integrity.
+
+---
+
+## 🧠 AI Architecture & High Availability
 
 
-3. Backend Setup
-   cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python run.py
 
+---
 
-Bhai, aapka project aik professional product lag raha hai. Maine aapki repository ko analyze kiya hai aur aapke liye aik Professional README.md file taiyar ki hai.
-Aap is poore text ko copy karein aur GitHub par apni README.md file mein paste kar dein. Is se aapka FYP presentation ke liye bilkul perfect ho jayega.
-🌍 GoGlobal AI - Smart Immigration & Document Portal
-GoGlobal AI is a next-generation, AI-driven immigration assistant designed to simplify the complex process of visa eligibility and document preparation. It leverages high-performance Large Language Models (LLMs) and real-time analytics to empower students and professionals in their global migration journey.
-🚀 Key Features
-👤 For Users (Applicants)
-AI Eligibility Engine: Instant visa success prediction (High/Moderate/Low) based on academic and professional profiles.
-Smart LinkedIn Sync: Extract professional skills, experience, and projects directly from a LinkedIn URL or Bio using NLP.
-AI Document Assistant: Generate highly persuasive, academic-standard Statement of Purpose (SOP) and Cover Letters in seconds.
-Professional PDF Export: Download auto-generated documents in a standardized, print-ready format.
-Real-time Visa News: Stay updated with a live ticker of global immigration policy changes.
-🔐 For Administrators
-Executive Dashboard: A secure console with real-time charts (Pie & Bar charts) for user analytics.
-Data-Driven Insights: Monitor success ratios and the most popular target destinations globally.
-User Management: Full CRUD capabilities to manage assessments and clean historical data.
-🛠 Tech Stack
-Frontend: React.js, Lucide Icons, Recharts (Analytics), jsPDF (Document Generation).
-Backend: FastAPI (Python), Motor (Async MongoDB), Pydantic (Data Validation).
-AI Engine: Google Gemini (1.5 Flash, 2.0 Flash, 2.5 Flash, Pro) with a custom Model Redundancy/Fallback Engine.
-Database: MongoDB Atlas (NoSQL).
-🧠 AI Architecture: High Availability
-One of the core technical highlights of this project is the AI Fallback Logic. To ensure zero downtime and bypass API Quota (429) errors, the backend automatically cycles through multiple Gemini models until the request is successfully fulfilled.
-🏃 Getting Started
-1. Prerequisites
-Python 3.9+
-Node.js & npm
-MongoDB Atlas Account
-Google AI (Gemini) API Key
+## 🛠 Tech Stack
+
+| Layer | Technologies Used |
+| :--- | :--- |
+| **Frontend** | React.js, Lucide Icons, Recharts (Analytics), jsPDF (Document Generation) |
+| **Backend** | FastAPI (Python), Motor (Async MongoDB Driver), Pydantic (Data Validation) |
+| **AI Engine** | Google Gemini API (1.5 Flash, 2.0 Flash, 2.5 Flash, Pro) |
+| **Database** | MongoDB Atlas (NoSQL cloud database) |
+
+---
+
+## 🏃 Getting Started
+
+### 📋 Prerequisites
+Ensure you have the following installed on your system:
+* Python 3.9+
+* Node.js & npm
+* MongoDB Atlas Account
+* Google AI (Gemini) API Key
+
+### 🔧 Installation & Setup
+
+#### 1. Clone the Repository
+```bash
+git clone [https://github.com/sajjadahmednizamani/FYP_PROJET.git](https://github.com/sajjadahmednizamani/FYP_PROJET.git)
+cd FYP_PROJET
 
 
 2. Backend Setup
+# Navigate to backend directory
 cd backend
+
+# Create and activate virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the FastAPI server
 python run.py
 
-
 3. Frontend Setup
+# Open a new terminal window and navigate to frontend directory
 cd frontend
+
+# Install npm packages
 npm install
+
+# Start the development server
 npm start
 
 
 
-Bhai, aapka project aik professional product lag raha hai. Maine aapki repository ko analyze kiya hai aur aapke liye aik Professional README.md file taiyar ki hai.
-Aap is poore text ko copy karein aur GitHub par apni README.md file mein paste kar dein. Is se aapka FYP presentation ke liye bilkul perfect ho jayega.
-🌍 GoGlobal AI - Smart Immigration & Document Portal
-GoGlobal AI is a next-generation, AI-driven immigration assistant designed to simplify the complex process of visa eligibility and document preparation. It leverages high-performance Large Language Models (LLMs) and real-time analytics to empower students and professionals in their global migration journey.
-🚀 Key Features
-👤 For Users (Applicants)
-AI Eligibility Engine: Instant visa success prediction (High/Moderate/Low) based on academic and professional profiles.
-Smart LinkedIn Sync: Extract professional skills, experience, and projects directly from a LinkedIn URL or Bio using NLP.
-AI Document Assistant: Generate highly persuasive, academic-standard Statement of Purpose (SOP) and Cover Letters in seconds.
-Professional PDF Export: Download auto-generated documents in a standardized, print-ready format.
-Real-time Visa News: Stay updated with a live ticker of global immigration policy changes.
-🔐 For Administrators
-Executive Dashboard: A secure console with real-time charts (Pie & Bar charts) for user analytics.
-Data-Driven Insights: Monitor success ratios and the most popular target destinations globally.
-User Management: Full CRUD capabilities to manage assessments and clean historical data.
-🛠 Tech Stack
-Frontend: React.js, Lucide Icons, Recharts (Analytics), jsPDF (Document Generation).
-Backend: FastAPI (Python), Motor (Async MongoDB), Pydantic (Data Validation).
-AI Engine: Google Gemini (1.5 Flash, 2.0 Flash, 2.5 Flash, Pro) with a custom Model Redundancy/Fallback Engine.
-Database: MongoDB Atlas (NoSQL).
-🧠 AI Architecture: High Availability
-One of the core technical highlights of this project is the AI Fallback Logic. To ensure zero downtime and bypass API Quota (429) errors, the backend automatically cycles through multiple Gemini models until the request is successfully fulfilled.
-🏃 Getting Started
-1. Prerequisites
-Python 3.9+
-Node.js & npm
-MongoDB Atlas Account
-Google AI (Gemini) API Key
-2. Backend Setup
-code
-Bash
-cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python run.py
-3. Frontend Setup
-cd frontend
-npm install
-npm start
-4. Environment Variables
-Create a .env file in the backend folder:
-
-GOOGLE_API_KEY=your_key_here
-MONGO_URI=your_mongodb_uri
-LINKEDIN_CLIENT_ID=your_id
-LINKEDIN_CLIENT_SECRET=your_secret
 
 
+
+
+
+
+
+
+One of the core technical milestones of this project is its **Model Redundancy & AI Fallback Engine**. To ensure zero downtime and bypass strict API Quota (429 Rate Limit) errors, the backend automatically cycles through multiple Google Gemini models until the request is successfully fulfilled.
