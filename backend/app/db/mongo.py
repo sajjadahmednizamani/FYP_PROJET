@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGO_URI = os.getenv("MONGO_URI")
+MONGO_URI = os.getenv(" ")
 
 # ✅ Connection Setup
-client = MongoClient(MONGO_URI)
+client = MongoClient( )
 db = client["goglobalai"]
 
 # ✅ Collections (Directly export karein taake 'None' ka masla na ho)

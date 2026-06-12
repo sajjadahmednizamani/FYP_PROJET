@@ -17,7 +17,7 @@ load_dotenv()
 router = APIRouter(prefix="/chatbot", tags=["AI Chatbot"])
 
 # ✅ 1. Configuration & API Key
-API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY = os.getenv(" ")
 genai.configure(api_key=API_KEY)
 
 # ✅ 2. DYNAMIC MODEL DISCOVERY (Wahi purana kamyab tareeka)

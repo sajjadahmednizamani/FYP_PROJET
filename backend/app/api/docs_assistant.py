@@ -10,7 +10,7 @@ from typing import Optional
 router = APIRouter(prefix="/docs-assistant", tags=["Document Assistant"])
 
 # AI Setup
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv(" "))
 
 def get_working_model_content(prompt):
     """

@@ -3,7 +3,7 @@ import asyncio
 from motor.motor_asyncio import AsyncIOMotorClient
 
 # MongoDB Detail (Apni URI yahan dalein)
-MONGO_URI = "mongodb+srv://goglobalai_user:USER_1_to_MANY@goglobalai-cluster.nngll51.mongodb.net/goglobalai?retryWrites=true&w=majority" 
+MONGO_URI = " " 
 DB_NAME = "goglobalai" # Jo bhi aapka DB name hai
 COLLECTION_NAME = "profiles" # FastAPI isi collection ko use kar raha hai
 

@@ -13,12 +13,12 @@ import json
 load_dotenv()
 router = APIRouter(prefix="/linkedin", tags=["LinkedIn Integration"])
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv(""))
 ai_model = genai.GenerativeModel('gemini-1.5-flash')
 
-CLIENT_ID = os.getenv("LINKEDIN_CLIENT_ID")
-CLIENT_SECRET = os.getenv("LINKEDIN_CLIENT_SECRET")
-REDIRECT_URI = os.getenv("LINKEDIN_REDIRECT_URI")
+CLIENT_ID = os.getenv(" ")
+CLIENT_SECRET = os.getenv(" ")
+REDIRECT_URI = os.getenv(" ")
 
 class CodeRequest(BaseModel):
     code: str

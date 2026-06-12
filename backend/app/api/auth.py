@@ -11,8 +11,8 @@ router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 # --- CONFIGURATION ---
 # Note: Real project mein inhein .env file mein hona chahiye
-SECRET_KEY = "GOGLOBAL_SUPER_SECRET_KEY"
-ALGORITHM = "HS256"
+SECRET_KEY = " "
+ALGORITHM = " "
 ACCESS_TOKEN_EXPIRE_MINUTES = 1440  # 24 Hours
 
 # --- MODELS ---
